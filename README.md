@@ -24,8 +24,11 @@
   #таблицы базы данных
 
   
-  ![Структура БД](https://raw.githubusercontent.com/Tron213/PSTX/master/src/img/DataBaseTable_Scheme.png)
+  ![Структура БД](https://github.com/Tron213/PSTX/blob/master/src/img/Project_flow.png)
 
+  #Архитектура связей проекта 
+  
+  ![элементы проекта](https://raw.githubusercontent.com/Tron213/PSTX/master/src/img/DataBaseTable_Scheme.png)
 ## Входные данные
  1 - UUID с rfid метки
  2 - Вес в кг с весов
