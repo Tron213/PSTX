@@ -22,7 +22,7 @@
 
 ## Структура проекта
   #таблицы базы данных
-  ![Структура БД](https://i.pinimg.com/originals/7c/03/9c/7c039c64a34b9b2fcebd8283e663f1c8.jpg)
+  ![Структура БД](https://raw.githubusercontent.com/Tron213/PSTX/master/src/img/DataBaseTable_Scheme.png)
 
 ## Входные данные
  1 - UUID с rfid метки
