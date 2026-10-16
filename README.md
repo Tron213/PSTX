@@ -22,6 +22,8 @@
 
 ## Структура проекта
   #таблицы базы данных
+
+  
   ![Структура БД](https://raw.githubusercontent.com/Tron213/PSTX/master/src/img/DataBaseTable_Scheme.png)
 
 ## Входные данные
