@@ -1,0 +1,8 @@
+body {
+    min-height: 100vh;
+}
+.nav .nav-link:hover {
+background:#B6C649;
+transition:0.356s;
+}
+

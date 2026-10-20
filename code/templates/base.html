@@ -1,0 +1,92 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PSTX</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+>
+    <!-- Собственные стили -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body class="bg-light">
+
+<div class="d-flex min-vh-100">
+
+    <!-- Сайдбар -->
+    <aside class="d-flex flex-column flex-shrink-0 p-3 bg-white border-end"
+           style="width: 250px;">
+
+        <h2
+           class="d-flex align-items-center justify-content-center gap-1 mb-3 text-decoration-none text-dark">
+            <i class="bi bi-globe"></i>
+            <span class="fs-2 fw-bold">PSTX</span>
+</h2>
+
+        <hr>
+
+        <nav class="nav nav-pills flex-column gap-2">
+            <a href="/" class="nav-link text-dark">
+                <i class="bi bi-house"></i>
+                <span>Главная</span>
+            </a>
+
+            <a href="/herd/" class="nav-link text-dark">
+                <i class="bi bi-tags"></i>
+                 <span>Стадо</span>
+            </a>
+
+            <a href="/employees/" class="nav-link text-dark">
+                <i class="bi bi-people"></i>
+                <span>Сотрудники</span>
+            </a>
+
+            <a href="/alerts/" class="nav-link text-dark">
+                <i class="bi bi-exclamation-octagon"></i>
+                <span>Предупреждения</span>
+            </a>
+
+            <a href="/statistic/" class="nav-link text-dark">
+                <i class="bi bi-file-bar-graph"></i>
+                 <span>Статистика</span>
+            </a>
+
+            <a href="/devices/" class="nav-link text-dark">
+                <i class="bi bi-robot"></i>
+                <span>Устройства</span>
+            </a>
+        </nav>
+
+        <div class="mt-auto pt-4">
+            <hr>
+            <small class="text-secondary">Система управления фермой</small>
+        </div>
+    </aside>
+
+    <!-- Рабочая область -->
+    <main class="flex-grow-1 p-4">
+        {% block content %}{% endblock %}
+    </main>
+
+</div>
+
+<!-- Bootstrap JS -->
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+</script>
+
+<!-- Собственный JavaScript -->
+<script src="{% static 'js/main.js' %}"></script>
+
+</body>
+</html>
